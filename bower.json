@@ -1,0 +1,25 @@
+{
+  "name": "mami",
+  "homepage": "https://github.com/antoinehng/mami",
+  "authors": [
+    "Antoine Henning <henning.antoine@gmail.com>"
+  ],
+  "description": "Mami: Adaptative Multiview Interface",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "4.0.0",
+    "font-awesome": "5.0.7",
+    "normalize-css": "^7.0.0",
+    "list.js": "^1.5.0"
+  }
+}

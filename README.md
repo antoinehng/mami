@@ -1,2 +1,1 @@
-# mami
-Mami: Adaptative Multiview Interface
+# Mami: Adaptative Multiview Interface

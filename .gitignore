@@ -102,3 +102,4 @@ ENV/
 
 # local dev files
 dev.local/
+.vscode/

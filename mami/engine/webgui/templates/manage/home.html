@@ -1,18 +1,92 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 
+{% block header_title %}
+    <a href=""><span class='badge badge-primary'>LABO</span></a>
+    <a href="">X2-IPTV</a> <small><i class='fa fa-caret-right'></i></small> 
+    <a href="">Grappe 0</a> <small><i class='fa fa-caret-right'></i></small> 
+    <a href="">Enc 01</a> <small><i class='fa fa-caret-right'></i></small> 
+    <a href="">Service 1 - CANAL+ HD</a> 
+{% endblock %}
+
+
 {% block page_content %}
+<div class="header-space"></div>
 <div class='row'>
     <div class='col'>
-        <h2>Manage</h2>
+        <h2>Listing Environments</h2>
+        <a href="#"><div class="env_preview"><span class='env_title badge badge-primary'>LABO</span></div></a>
+        <a href="#"><div class="env_preview">
+            <span class='env_title badge badge-danger'>PROD</span><br>
+            <small>XX Streams</small>
+        </div></a>
+        <a href="#"><div class="env_preview env_add text-center"><br><br><i class='fa fa-plus'></i><br>Create new environment</div></a>
     </div>
 </div>
-<div class='row'>
+<div class='row bg-gray'>
     <div class='col'>
-        <h2>Recent views</h2>
+        <h2>Recently viewed</h2>
+        <ul>
+            <li>
+                <a href="">
+                    <span class='badge badge-primary'>LABO</span>
+                    X2-IPTV <small><i class='fa fa-caret-right'></i></small> 
+                    Grappe 0 <small><i class='fa fa-caret-right'></i></small> 
+                    Enc 01 <small><i class='fa fa-caret-right'></i></small> 
+                    Service 1 - CANAL+ HD
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class='badge badge-danger'>PROD</span>
+                    X2-IPTV <small><i class='fa fa-caret-right'></i></small> 
+                    Grappe 0 <small><i class='fa fa-caret-right'></i></small> 
+                    Enc 01 <small><i class='fa fa-caret-right'></i></small> 
+                    Service 1 - CANAL+ HD
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class='badge badge-primary'>LABO</span>
+                    X2-IPTV <small><i class='fa fa-caret-right'></i></small> 
+                    Grappe 0 <small><i class='fa fa-caret-right'></i></small> 
+                    Enc 01 <small><i class='fa fa-caret-right'></i></small> 
+                    Service 1 - CANAL+ HD
+                </a>
+            </li>
+        </ul>
     </div>
     <div class='col'>
-        <h2>New views</h2>
+        <h2>Recently added</h2>
+        <ul>
+            <li>
+                <a href="">
+                    <span class='badge badge-primary'>LABO</span>
+                    X2-IPTV <small><i class='fa fa-caret-right'></i></small> 
+                    Grappe 0 <small><i class='fa fa-caret-right'></i></small> 
+                    Enc 01 <small><i class='fa fa-caret-right'></i></small> 
+                    Service 1 - CANAL+ HD
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class='badge badge-danger'>PROD</span>
+                    X2-IPTV <small><i class='fa fa-caret-right'></i></small> 
+                    Grappe 0 <small><i class='fa fa-caret-right'></i></small> 
+                    Enc 01 <small><i class='fa fa-caret-right'></i></small> 
+                    Service 1 - CANAL+ HD
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class='badge badge-primary'>LABO</span>
+                    X2-IPTV <small><i class='fa fa-caret-right'></i></small> 
+                    Grappe 0 <small><i class='fa fa-caret-right'></i></small> 
+                    Enc 01 <small><i class='fa fa-caret-right'></i></small> 
+                    Service 1 - CANAL+ HD
+                </a>
+            </li>
+        </ul>
     </div>
 </div>
 {% endblock %}

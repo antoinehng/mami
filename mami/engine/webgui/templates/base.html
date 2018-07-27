@@ -25,35 +25,43 @@
 		<meta name="theme-color" content="#141414">
 	
 	{% block css_requirements %}
-		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
 		<link href="{% static 'bower_components/normalize-css/normalize.css' %}" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600" rel="stylesheet">
 		<link href="{% static 'bower_components/bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet">
 		<link href="{% static 'bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css' %}" rel="stylesheet">
 		<link href="{% static 'css/base.css' %}" rel="stylesheet">
 	{% endblock %}
 	</head>
 	<body>
-        <header>
-                <h1><b>Mami</b>: Adaptative Multiview Interface</h1>
-                <ul>
-                    <li><a href='#' class='active'><i class='fa fa-home fa-sm'></i> Home</a></li>
-                    <li><a href='#'><i class='fa fa-search fa-sm'></i> Search</a></li>
-                </ul>
-        </header>
+		<header>
+			<div class='title'>{% block header_title %}{% endblock %}</div>
+			<div class='right-menu'>
+				<a href='#'>Antoine  <i class='fa fa-user-circle'></i></a>
+				<a href='#'><i class='fa fa-cog'></i></a>
+			</div>
+		</header>
+		
+		<btn id="header-toggle"><i class='fa fa-th'></i></btn>
+
 		<div class='container-fluid'>
             {% block page_content %}
             {% endblock %}
 		</div>	
+
 		{% block js_requirements %}
-			<script src="{% static 'bower_components/jquery/dist/jquery.min.js' %}"></script>
 			<script src="{% static 'bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+			<script src="{% static 'bower_components/jquery/dist/jquery.min.js' %}"></script>
 		{% endblock %}
+
 		{% block javascript %}
 			<script>
 				function goBack() { window.history.back(); }
 				$(function () {
   					$('[data-toggle="tooltip"]').tooltip()
 				})
+			</script>
+			<script>
+
 			</script>
 		{% endblock %}
 	</body>
